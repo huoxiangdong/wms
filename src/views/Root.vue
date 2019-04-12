@@ -7,7 +7,7 @@ v-app
       v-toolbar-side-icon
       v-toolbar-title WMS
       v-spacer
-      v-btn(icon)
+      v-toolbar-title 5999
     v-flex(xs12 sm12)
      router-view
     v-flex

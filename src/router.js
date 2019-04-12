@@ -9,11 +9,13 @@ export default new Router({
   base: process.env.BASE_URL,
   routes: [{
       path: '/',
-      name: 'root',
       component: Root,
       children: [{
         path: '',
-        component: () => import( /* webpackChunkName: "about" */ './views/Entry.vue')
+        component: () => import('./views/Entry.vue')
+      },{
+        path: '/stockout',
+        component: () => import('./views/Stockout.vue')
       }]
     },
 

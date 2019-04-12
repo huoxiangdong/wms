@@ -1,11 +1,10 @@
 <template lang="pug">
-v-card(flat to='stockout') 
-  v-container(fluid grid-list-md)
-    v-layout(row wrap)
+v-card(flat) 
+  v-container
+    v-layout(justify-center wrap)
      v-flex(v-for='card in cards' :key='card.title' v-bind='{ [`xs${card.flex}`]: true }')
-       v-card(color='teal')
+       v-card(color='teal' to='stockout')
         v-card-text(align='center').headline 生产领料
-     v-flex
   
 </template>
 <script>
